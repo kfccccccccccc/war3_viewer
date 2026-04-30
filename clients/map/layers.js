@@ -1,4 +1,4 @@
-import { OBJECT_CLASSIFICATIONS, FACTIONS } from '../../src/war3/objectclassification.js';
+import { OBJECT_CLASSIFICATIONS, FACTIONS } from '../../src/war3/objectclassification';
 let GlobalCanvas = null;
 /**
  * 初始化图层控制面板

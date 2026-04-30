@@ -55,7 +55,13 @@ export default defineConfig(({ command, mode }) => {
       },
       build: {
         // 在开发模式下启用sourcemap以方便调试
-        sourcemap: true
+        sourcemap: true,
+        rollupOptions: {
+          input: {
+            home: resolve(__dirname, 'index.html'),
+            map: resolve(__dirname, 'clients/map/index.html')
+          }
+        }
       },
       plugins: [
         react(),
